@@ -11,6 +11,6 @@ public class Hello {
     char c = 'A';
 
     boolean bool = true;
-    
+    System.out.println(number + " " + b + " " + s + " " + l + " " + f + " " + d + " " + c + " " + bool);
   }
 }

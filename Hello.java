@@ -1,16 +1,14 @@
 public class Hello {
   public static void main(String[] args) {
-    int number = 5;
-    byte b = 10;
-    short s = 20;
-    long l = 30L;
-
-    float f = 40.0f;
-    double d = 50.0;
-
-    char c = 'A';
-
-    boolean bool = true;
-    System.out.println(number + " " + b + " " + s + " " + l + " " + f + " " + d + " " + c + " " + bool);
+    int a = 10;
+    int b = 20;
+    int c = 30;
+    int d = 40;
+    boolean e = a < b && c > d;
+    boolean f = a > b || c < d;
+    boolean g = !(a == b);
+    System.out.println(e);
+    System.out.println(f);
+    System.out.println(g);
   }
 }

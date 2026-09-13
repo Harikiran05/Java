@@ -4,11 +4,15 @@ public class Hello {
     int b = 20;
     int c = 30;
     int d = 40;
-    boolean e = a < b && c > d;
-    boolean f = a > b || c < d;
-    boolean g = !(a == b);
-    System.out.println(e);
-    System.out.println(f);
-    System.out.println(g);
+    if (a > b) {
+      System.out.println("a is greater than b");
+    } else if (b > c) {
+      System.out.println("b is greater than c");
+    } else if (c > d) {
+      System.out.println("c is greater than d");
+    } else {
+      System.out.println("d is the greatest");
+      
+    }
   }
 }

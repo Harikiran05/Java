@@ -1,14 +1,28 @@
-class Calculator {
-  public int  add(int a , int b) {
-    return a + b;
-  }
-}
+
 
 public class Hello {
   public static void main(String[] args) {
-    Calculator calc = new Calculator();
-    int result = calc.add(5, 3);
-    System.out.println("Result: " + result);
+    int nums[][] = new int[3][4];
+
+    for(int i = 0; i < 3; i++) {
+      for(int j = 0; j < 4; j++) {
+        nums[i][j] = (int)(Math.random() * 10);
+      }
+    }
+
+    // for(int i = 0; i < 3; i++) {
+    //   for(int j = 0; j < 4; j++) {
+    //     System.out.print(nums[i][j] + " ");
+    //   }
+    //   System.out.println();
+    // }
+
+    for(int n[] : nums) {
+      for(int x : n) {
+        System.out.print(x + " ");
+      }
+      System.out.println();
+    }
   }
 }
 
